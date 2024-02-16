@@ -73,7 +73,7 @@ btnHold.addEventListener("click", () => {
         diceEle.classList.add('hidden');
         document.getElementById(`score--${activePlayer}`).textContent = score[activePlayer];
 
-        if (score[activePlayer] >= 15) {
+        if (score[activePlayer] >= 50) {
             play = false;
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner')
             document.querySelector(`.player--${activePlayer}`).classList.remove('player--active')
@@ -84,3 +84,4 @@ btnHold.addEventListener("click", () => {
 })
 
 btnNew.addEventListener("click", init)
+
